@@ -1,1 +1,61 @@
 /* место для вашего кода */
+
+.header { 
+    display: grid;
+    grid-template-columns: 1fr 148px 1fr;
+    align-items: center; 
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.menu-header{ 
+    display: flex;
+    list-style-type: circle;
+    justify-self: start;
+    padding-right: 50px;
+    
+}
+
+.menu-header-home{
+    list-style-type: none;
+    
+}
+
+.logo-header{
+    width: 148px;
+    height: 105px;
+    justify-self: center;
+
+
+}
+
+.adress-header{
+   max-width:240px;
+   justify-self:end;
+   
+   
+
+}
+
+.adress-header-phone{
+    font-family: Raleway;
+font-size: 18px;
+letter-spacing: 0;
+}
+
+.adress-header-email{
+    font-family: Raleway;
+font-size: 18px;
+letter-spacing: 0;
+
+}
+
+.adress-header-info{
+font-family: Raleway;
+font-size: 18px;
+letter-spacing: 0;
+
+
+
+}
+

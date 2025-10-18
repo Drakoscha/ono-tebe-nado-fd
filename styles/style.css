@@ -1,8 +1,11 @@
 
-
+.body{
+    padding: 92px 50px 90px;
+    max-width: 1100px;
+}
 .header{
     display: grid;
-    grid-template-columns: 1fr 148px 1fr;
+    grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     font-family: Raleway, sans-serif;
     text-underline-offset: 4px;
@@ -11,10 +14,7 @@
 }
 
 .menu-header{
-    justify-self: start;
-    
-    
-    
+    justify-self: start;    
 }
 
 .menu-header-list{
@@ -25,16 +25,16 @@
     font-size: 18px;
     line-height: 21px;
     width: 391.48px;
-    
-    align-items: center;   
+    align-items: center;      
+    padding-left: 0px;
+    padding-bottom: 6px;
+    padding-right: 0px;
 }
 
 .menu-header-link-active{
     list-style: none;
-    text-decoration: none; 
     font-weight: 400;
-    color: inherit;
-    display: flex;   
+    color: inherit;    
 }
 
 
@@ -43,19 +43,21 @@
     height: 105px;
     display: block;
     place-items: center;
-
-
+    justify-self: center;
+    margin-right: 99px;
 }
 
 .adress-header{
-   justify-self: center;
+   justify-self: end;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    padding-top: 7px;
    padding-bottom: 3px;
-   margin-left: 90px;
    height: 100px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   padding-right: 136px;
 }
 
 .adress-header-phone{
@@ -79,7 +81,7 @@
     line-height: 24px;
     color: inherit;
 }
-/* наб. Принсенграхт 263- 265, Амстердам */
+
 .adress-header-info{  
     font-family: Raleway, sans-serif;
     font-size: 18px;
@@ -98,8 +100,9 @@
     background-position: center;
     z-index: 1;
     overflow: hidden;
-    max-width: 1100px;
-    
+    max-width: 1100px; 
+    background-repeat: no-repeat;
+    background-size: cover;  
 }
 
 .overlay{
@@ -111,5 +114,90 @@
     background-color: #000;
     z-index: -1;
     opacity: 60%;
-
 }
+
+.cover-title{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-start;
+    text-transform:uppercase;
+    color: white;
+    font-family: Raleway, bold;
+    font-weight: 700;
+    font-size: 100px;
+    padding-left: 50px;
+    padding-top: 165px;
+    line-height: 114%;
+    margin-top: 0;
+}
+
+.aligned-text{
+    letter-spacing: 30px;
+}
+
+.aligned-text-center{
+    letter-spacing: 30px;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.aligned-text-right{
+    width: 387;
+    height: 115;
+    top: 435px;
+    left: 663px;
+    letter-spacing: 30px;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.no-letter-spacing{
+     letter-spacing: 0;
+}
+
+.cover-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 1000px;
+    max-height: 51px;
+}
+
+.cover-description-text{
+    
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: white;
+    word-spacing: 18.5px;
+    text-align: right;
+    max-width: 637px;
+    text-wrap: nowrap;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.bet-button{  
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    background-color: transparent;
+    font-family: Raleway;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    min-width: 256px;
+    min-height: 51px;
+    margin-left: 107px;
+    margin-top: 50px;
+}
+

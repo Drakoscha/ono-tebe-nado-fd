@@ -1,61 +1,115 @@
-/* место для вашего кода */
 
-.header { 
+
+.header{
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
-    align-items: center; 
-    padding-right: 50px;
-    padding-left: 50px;
+    align-items: center;
+    font-family: Raleway, sans-serif;
+    text-underline-offset: 4px;
+    padding: 92px 50px 90px;
+    max-width: 1100px;
 }
 
-.menu-header{ 
-    display: flex;
-    list-style-type: circle;
+.menu-header{
     justify-self: start;
-    padding-right: 50px;
+    
+    
     
 }
 
-.menu-header-home{
-    list-style-type: none;
+.menu-header-list{
+    display: flex;
+    flex-direction: row;
+    list-style: circle; 
+    gap: 32px;
+    font-size: 18px;
+    line-height: 21px;
+    width: 391.48px;
     
+    align-items: center;   
 }
+
+.menu-header-link-active{
+    list-style: none;
+    text-decoration: none; 
+    font-weight: 400;
+    color: inherit;
+    display: flex;   
+}
+
 
 .logo-header{
     width: 148px;
     height: 105px;
-    justify-self: center;
+    display: block;
+    place-items: center;
 
 
 }
 
 .adress-header{
-   max-width:240px;
-   justify-self:end;
-   
-   
-
+   justify-self: center;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-top: 7px;
+   padding-bottom: 3px;
+   margin-left: 90px;
+   height: 100px;
 }
 
 .adress-header-phone{
-    font-family: Raleway;
-font-size: 18px;
-letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: inherit;
 }
 
 .adress-header-email{
-    font-family: Raleway;
-font-size: 18px;
-letter-spacing: 0;
-
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: inherit;
+}
+/* наб. Принсенграхт 263- 265, Амстердам */
+.adress-header-info{  
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: inherit;
 }
 
-.adress-header-info{
-font-family: Raleway;
-font-size: 18px;
-letter-spacing: 0;
-
-
-
+.cover{
+    min-height: 757px;
+    position: relative;
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    z-index: 1;
+    overflow: hidden;
+    max-width: 1100px;
+    
 }
 
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+    opacity: 60%;
+
+}

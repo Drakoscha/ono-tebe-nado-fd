@@ -372,6 +372,7 @@ a {
     align-content: space-between;
     margin-top: 35px;
     height: 180px;
+    padding: 0 50px 82px;
 }
 
 .adress-footer {
@@ -379,7 +380,6 @@ a {
    flex-direction: column;
    align-items: flex-start;
    min-width: 265px;
-   padding-left: 50px;
    padding-top: 45px;
    text-underline-offset: 4px;
 }
